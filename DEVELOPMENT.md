@@ -20,7 +20,7 @@ package is used only by a local contract test that inspects classes and signatur
 ## Current development baseline
 
 - Prefect tested locally: `3.8.0`.
-- Tenki SDK tested locally: `0.5.4`.
+- Tenki SDK tested locally: `1.4.1`.
 - Worker API: `BaseWorker.run()` and `kill_infrastructure()`.
 - Guest command: `prefect flow-run execute`.
 - SDK namespace and surface: `tenki.AsyncClient`, `tenki.AsyncSandbox`, and `tenki.CommandResult`.
@@ -48,10 +48,11 @@ requested by Prefect maintainers.
 ## Manual live validation
 
 Live checks remain opt-in and never run in CI because they authenticate with Tenki
-and may consume credits. Manual validation with Tenki SDK 0.5.4 has covered:
+and may consume credits. The live worker smoke test below has been run with Tenki
+SDK 1.4.1 and covers real sandbox provisioning, stdout/stderr streaming, exit
+codes, and cleanup. Earlier manual validation (with SDK 0.5.4) also covered:
 
-- real sandbox provisioning and cleanup;
-- stdout/stderr streaming, exit codes, timeouts, and cancellation;
+- timeouts and cancellation;
 - repeated remote termination and credential isolation;
 - a complete Prefect deployment run against an authenticated public API;
 - remote dataset retrieval and a public HTTP/WebSocket application.

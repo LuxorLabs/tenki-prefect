@@ -1232,8 +1232,8 @@ name = "pendulum"
 version = "3.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "python-dateutil", marker = "python_full_version < '3.13'" },
-    { name = "tzdata", marker = "python_full_version < '3.13'" },
+    { name = "python-dateutil" },
+    { name = "tzdata" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/cb/72/9a51afa0a822b09e286c4cb827ed7b00bc818dac7bd11a5f161e493a217d/pendulum-3.2.0.tar.gz", hash = "sha256:e80feda2d10fa3ff8b1526715f7d33dcb7e08494b3088f2c8a3ac92d4a4331ce", size = 86912, upload-time = "2026-01-30T11:22:24.093Z" }
 wheels = [
@@ -1393,7 +1393,7 @@ dev = [
 requires-dist = [
     { name = "exceptiongroup", marker = "python_full_version < '3.11'", specifier = ">=1.2" },
     { name = "prefect", specifier = ">=3.7.2,<4" },
-    { name = "tenki", specifier = ">=0.5.4,<0.6" },
+    { name = "tenki", specifier = ">=1.4.1" },
 ]
 
 [package.metadata.requires-dev]
@@ -2488,8 +2488,8 @@ name = "taskgroup"
 version = "0.2.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "exceptiongroup", marker = "python_full_version < '3.11'" },
-    { name = "typing-extensions", marker = "python_full_version < '3.11'" },
+    { name = "exceptiongroup" },
+    { name = "typing-extensions" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/f0/8d/e218e0160cc1b692e6e0e5ba34e8865dbb171efeb5fc9a704544b3020605/taskgroup-0.2.2.tar.gz", hash = "sha256:078483ac3e78f2e3f973e2edbf6941374fbea81b9c5d0a96f51d297717f4752d", size = 11504, upload-time = "2025-01-03T09:24:13.761Z" }
 wheels = [
@@ -2498,16 +2498,16 @@ wheels = [
 
 [[package]]
 name = "tenki"
-version = "0.5.4"
+version = "1.4.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "grpcio" },
     { name = "protobuf" },
     { name = "websocket-client" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/30/85/9f311f784b92639de2d0aaae7c6d67c76c5ebfd60543d56739724c07683a/tenki-0.5.4.tar.gz", hash = "sha256:3d900ca3eedf98aea0ace315246a3f2bbdc19149d966a320cdb99fd406b681fa", size = 186073, upload-time = "2026-07-29T11:08:41.791Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3c/59/93036224f9c175af8d7653e618f385ded93f873da5b727755f519ca5b75c/tenki-1.4.1.tar.gz", hash = "sha256:ff361ce1ef7b1676ce8fea519aa63cbce8cb1c1d98fc989d1fde1ff6ef8a79ae", size = 290340, upload-time = "2026-10-01T15:26:19.115Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e9/de/244e8d8bffe6673ae3a58423016b8c03465214ab9101a3e61234b5d4c076/tenki-0.5.4-py3-none-any.whl", hash = "sha256:d5df29fa5f7f93fc6c420d3a0b50e68e0b35fda63e17ed57c0f302a522cbf9ef", size = 158916, upload-time = "2026-07-29T11:08:40.023Z" },
+    { url = "https://files.pythonhosted.org/packages/4c/00/f5c5d6b8f75acf6cc2e25128e9418eddadf63571497b6b04e524d5ac09c8/tenki-1.4.1-py3-none-any.whl", hash = "sha256:c48352be3d1c514c7e47aa5264e55723675510ce4a20a025a2dedb1d83dcfada", size = 199117, upload-time = "2026-10-01T15:26:17.517Z" },
 ]
 
 [[package]]
@@ -2801,8 +2801,8 @@ name = "whenever"
 version = "0.10.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "tzdata", marker = "python_full_version >= '3.13' and sys_platform == 'win32'" },
-    { name = "tzlocal", marker = "python_full_version >= '3.13' and sys_platform != 'darwin' and sys_platform != 'linux'" },
+    { name = "tzdata", marker = "sys_platform == 'win32'" },
+    { name = "tzlocal", marker = "sys_platform != 'darwin' and sys_platform != 'linux'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/6d/40/94856fe2439c4b8162d1a23b4cf3a48bb00bed0ed7b8d10add40988fa555/whenever-0.10.3.tar.gz", hash = "sha256:af8958c870bd178742f0089c3552d5702241cab1f4b6bdfd3b03111db4bc2150", size = 435946, upload-time = "2026-07-17T07:35:25.734Z" }
 wheels = [
