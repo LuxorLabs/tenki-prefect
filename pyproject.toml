@@ -23,8 +23,9 @@ classifiers = [
 dependencies = [
   "prefect>=3.7.2,<4",
   "exceptiongroup>=1.2; python_version < '3.11'",
-  # Stay within the SDK minor line covered by the integration contract tests.
-  "tenki>=0.5.4,<0.6",
+  # The Tenki platform's 1.x auth change broke 0.5.x at command start, so the
+  # floor is the oldest SDK that works; the contract tests catch future drift.
+  "tenki>=1.4.1",
 ]
 
 [project.urls]

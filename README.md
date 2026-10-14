@@ -23,7 +23,7 @@ The current implementation includes:
 - Prefect collection and worker-type registration;
 - a masked `TenkiCredentials` block;
 - configurable workspace, compute, image, network, and timeout options;
-- an asynchronous boundary around `tenki` 0.5.x;
+- an asynchronous boundary around `tenki` 1.x;
 - cancellation-safe creation and cleanup;
 - remote termination by Prefect infrastructure identifier;
 - mocked lifecycle and SDK-contract tests that do not create Tenki resources.
@@ -32,7 +32,7 @@ The current implementation includes:
 
 - Python 3.10 or newer;
 - Prefect 3.7.2 or newer, below 4.0;
-- `tenki` 0.5.4 or newer, below 0.6;
+- `tenki` 1.4.1 or newer;
 - for a real flow run, a Tenki image or snapshot containing Prefect and the flow's
   runtime dependencies, with outbound access to the configured Prefect API.
 
